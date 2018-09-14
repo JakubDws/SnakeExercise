@@ -55,35 +55,7 @@ public class Board extends JPanel {
         snakeElements.add(new SnakeElement(x,y, dir));
 
     }
-    /*
-    public  void moveBodyBlock(){
-        for (int i = snakeElements.size(); i > 1; i--) {
-            int previousPositionX = snakeElements.get(i-2).positionX;
-            int previousPositionY = snakeElements.get(i-2).positionY;
-            snakeElements.get(i-1).positionX = previousPositionX;
-            snakeElements.get(i-1).positionY = previousPositionY;
-        }
-    }
-
-    public void moveHeadBlock(){
-        Direction dir = snakeElements.get(0).direction;
-        switch(dir){
-
-            case UP:
-                snakeElements.get(0).positionY -= SnakeElement.ELEMENT_SIZE;
-                break;
-            case DOWN:
-                snakeElements.get(0).positionY += SnakeElement.ELEMENT_SIZE;
-                break;
-            case RIGHT:
-                snakeElements.get(0).positionX += SnakeElement.ELEMENT_SIZE;
-                break;
-            case LEFT:
-                snakeElements.get(0).positionX -= SnakeElement.ELEMENT_SIZE;
-                break;
-        }
-    }
-    */
+    
     protected void turnRight() {
         Direction dir = snakeElements.get(0).direction;
 
